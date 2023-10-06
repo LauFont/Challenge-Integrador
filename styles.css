@@ -84,43 +84,52 @@ header ul {
 header picture {
     padding: 20px;
 }
+
+/*    footer    */
 footer {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    background-color: var(--dark-bg-color); 
-    color: var(--white-color); 
+    align-items: center;
+    background-color: var(--dark-bg-color);
+    color: var(--white-color);
     padding: 20px;
 }
+
 .menu-footer {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
+
 .menu-footer ul {
-    list-style: none; 
+    list-style: none;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
 }
+
 .menu-footer a {
-    text-decoration: none; 
-    color: var(--white-color); 
+    text-decoration: none;
+    color: var(--white-color);
 }
+
 .menu-footer picture {
-    padding: var(--spacing-68); 
+    padding: var(--spacing-68);
 }
 
 .copyright {
-    text-align: center; 
-    margin-top: 20px; 
- }
-
+    color: var(--white-color);
+    font-size: 2em;
+    font-style: var(--alternative-font);
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin-top: 20px;
+}
 
 /*    main    */
 .container {
-    max-width: 1200px;
     margin: auto;
     background-color: var(--white-color);
 }
@@ -132,15 +141,20 @@ h4 {
 }
 
 h2 {
-    font-size: 1.8em;
-    text-transform: inherit;
+    font-size: var(--font-jumbo);
     color: var(--dark-color);
     text-transform: uppercase;
 }
 
-p {
+h3 {
+    font-size: var(--font-large);
     text-transform: capitalize;
+}
+
+p {
+    text-transform: none;
     color: var(--dark-color-fill-2);
+    font-size: var(--font-large);
 }
 
 a {
@@ -151,15 +165,45 @@ a {
     color: var(--dark-color);
 }
 
-.copyright {
+
+/*    banner    */
+.banner {
+    background-image: url(./img/funkos-banner.webp);
+    background-repeat: no repeat;
+    background-size: cover;
+    height: 400px;
+
+}
+
+.banner-content h3
+{
+margin: 0px;
+color: var(--white-color);
+font-family: var(--alternative-font);
+}
+
+.banner-content p {
+    font-size: var(--font-small);
+}
+#text-banner{
     color: var(--white-color);
-    font-size: 2em;
-    font-style: var(--alternative-font);
-    font-weight: 500;
-    line-height: normal;
+    font-family: var(--alternative-font);
+}
+.image-content button a {
+    color: var(--dark-color);
+    font-size: var(--font-xsmall);
 }
 
 /*    botones   */
+.banner button {
+    border-radius: 50px;
+    background: var(--white-color);
+    border: 0;
+    width: 150px;
+    height: 40px;
+    margin: 50px;
+}
+
 .boton1 {
     border-radius: 50px;
     background: var(--dark-bg-color);
@@ -169,6 +213,8 @@ a {
 a {
     color: var(--white-color);
     font-family: var(--base-font);
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .boton2 {
@@ -178,12 +224,15 @@ a {
     height: 3em;
     flex-shrink: 0;
     font-family: var(--base-font);
+    text-align: center;
 }
 
 .boton2 a {
     color: var(--white-color);
     line-height: normal;
     text-transform: uppercase;
+    font-size: var(--font-xsmall);
+    padding: 10px;
 }
 
 .boton3 {
@@ -194,13 +243,15 @@ a {
 #decorado {
     text-decoration: underline;
 }
+
 /**** cards  *****/
 .card-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-    text-align: center; 
-  }
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
 .card {
     flex-shrink: 0;
 }
